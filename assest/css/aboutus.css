@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fascinate Inline',
+        cursive;
+}
+
+.nav-pills-custom .nav-link {
+    background: #fff;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #45b649;
+    background: #fff;
+}
+
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+.social {
+    line-height: 30px;
+}
