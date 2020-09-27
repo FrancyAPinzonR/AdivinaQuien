@@ -95,8 +95,6 @@ body {
 }
 
 .btnNombre {
-    /* width: 180px;
-    height: 50px; */
     width: 70%;
     height: 9%;
     color: var(--neonViolet);
@@ -115,8 +113,6 @@ body {
 }
 
 .btnAdivina {
-    /* width: 250px;
-    height: 50px; */
     width: 50%;
     height: 9%;
     color: var(--neonBlue);
@@ -157,9 +153,6 @@ body {
 }
 
 .input {
-    /* width: 200px;
-    height: 50px;
-    padding-left: 1em; */
     width: 40%;
     padding: 1.5em;
     margin: 1em .3em;
@@ -178,7 +171,6 @@ body {
 
 /* Animación - Introduccion*/
 .introduccion {
-    /* background-color: var(--backgroundColor); */
     background-color: #191722;
     position: fixed;
     top: 0;
@@ -228,6 +220,46 @@ body {
 }
 
 /*Responsive*/
+/*Responsive Tablet*/
+@media only screen and (max-width: 768px) {
+    .marcoFoto {
+        width: 250px;
+        height: 250px;
+    }
+
+    .foto {
+        width: 200px;
+        height: 200px;
+        margin: 1.8em auto;
+    }
+
+    .nombreApellido {
+        margin: auto;
+        flex-direction: column;
+
+    }
+
+    .input {
+        width: 60%;
+        align-self: center;
+    }
+
+    .btnNombre {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .btnAdivina {
+        font-size: 16px;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+
+}
+
+/*Responsive Celular*/
 @media only screen and (max-width: 576px) {
     .gameCont {
         margin-top: 1em;
@@ -246,10 +278,6 @@ body {
 
     .marcoizq {
         grid-area: marcoizq;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
     }
 
     .marcoder {
