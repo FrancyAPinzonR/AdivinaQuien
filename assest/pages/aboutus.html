@@ -14,26 +14,64 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade bg-light" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="exampleModalLongTitle">Lee Atentamente</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                </div>
+                <div class="modal-body">
+                    Si aceptas el reto debes seguir los siguientes pasos:
+                    <p>1. Lee detenidamente cada uno de los perfiles que se encuentran la pagina</p>
+                    <p> 2. Si estas completamente seguro que almacenaste la mayor cantidad de informacion. Selecciona ir
+                        al
+                        juego.</p>
+                    <p>3. Una vez hayas ingresado al juego no podras retoceder para ver cualquier informacion.</p>
+                    <p>4. Recuerda que dentro del juego corre el tiempo y tienes pocas oportunidades para resolver
+                        el
+                        enigma.</p>
+                    <p>5. Si depues de leer los perfiles tienes alguna duda, puedes volver a ver las indicaciones en
+                        el
+                        boton Instrucciones.</p>
+                    <p>6. Si despues de leer los perfiles, aun no quieres jugar puedes cerrar tu sesion e ingresar
+                        cuando estes seguro</p>
+                    <p class="text-uppercase text-success"> 7. Divierte! </p>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="./login.html"><button type="button" class="btn btn-secondary" id="closelogin">No Acepto el
+                            Reto</button></a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Acepto el Reto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 AdvinaQuien
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon "></span>
             </button>
-            <div class="collapse navbar-collapse text-white" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="../pages/registro.html">Registrarse
-                            <span class="sr-only">(current)</span>
+                    <li class="nav-item mx-2">
+                        <a class="ht-tm-element btn btn-block btn-secondary my-2" data-toggle="modal"
+                            data-target="#exampleModalCenter">Instrucciones
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-white" href="../pages/login.html">Iniciar Sesion</a>
+                    <li class="nav-item mx-2 my-2">
+                        <a class="ht-tm-element btn btn-block btn-outline-success" href="#">Ir al
+                            juego</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -41,7 +79,7 @@
     <main>
         <section class="py-2 header text-center">
             <div class="container py-4">
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-3">
                         <div class="py-3">
                             <h2>Integrantes</h2>
@@ -49,7 +87,7 @@
                         <!-- Recuadros personas -->
                         <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
-                            <a class="nav-link mb-3 p-4 ht-tm-element btn btn-shadow btn-outline-success"
+                            <a class="nav-link mb-3 p-3 ht-tm-element btn btn-shadow btn-outline-success"
                                 id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                                 aria-controls="v-pills-home" aria-selected="true">
                                 <i class="fa fa-user-circle-o mr-2"></i>
@@ -77,9 +115,7 @@
                                 <span class="font-weight-bold small text-uppercase">FERNEY EDUARDO RODRÍGUEZ</span></a>
                         </div>
                     </div>
-
-
-                    <div class="col-md-9 pt-5">
+                    <div class="col-md-7 pt-3">
                         <!-- Contenidos Personas -->
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade py-3 shadow rounded show active" id="v-pills-home" role="tabpanel"
@@ -168,8 +204,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-2 my-5 py-5 rounded bg-dark">
+                        <div class="profile my-2 py-3">
+                            <img src="https://www.flaticon.es/svg/static/icons/svg/265/265667.svg" alt="person"
+                                width="100" class="rounded mb-1 border border-white">
+                            <div class="media-body text-white py-3">
+                                <h5 class="mb-1" id="nameperson">NAME</h5>
+                            </div>
+                            <a href="../pages/login.html" class="btn btn-primary btn-sm btn-block">Cerrar Sesion</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
 
     </main>
