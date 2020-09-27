@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/game.css">
 </head>
+
 <body>
     <main>
-            <div class="gameCont">
-                <div class="marco marcoizq">
-                    <button class="boton btnNombre">Leidy</button>
-                    <button class="boton btnNombre">Rodríguez</button>
-                    <button class="boton btnNombre">Valero</button>
-                    <button class="boton btnNombre">Alejandra</button>
-                    <button class="boton btnNombre">Cuellar</button>
-                    <button class="boton btnNombre">Ferney</button>
-                    <button class="boton btnNombre">Pinzón</button>
-                    <button class="boton btnNombre">Julián</button>
-                </div>
+        <a href="./login.html"><button class="botonSalir">SALIR X</button></a>
 
-                <div class="contCenter">
-                    <div class="marcoFoto">
-                        <img class="foto" src="../src/Julian.jpeg" alt="">
-                    </div>
-                    <div class="nombreApellido">
-                        <input class="input" placeholder="Nombre" disabled>
-                        <input class="input" placeholder="Apellido" disabled>
-                    </div>
-                    <button class="boton btnAdivina">Adivina</button>
-                </div>
-
-                <div class="marco marcoder">
-
-                </div>
+        <div class="gameCont">
+            <div class="marco marcoizq">
+                <button class="boton btnNombre">Leidy</button>
+                <button class="boton btnNombre">Rodríguez</button>
+                <button class="boton btnNombre">Valero</button>
+                <button class="boton btnNombre">Alejandra</button>
+                <button class="boton btnNombre">Cuellar</button>
+                <button class="boton btnNombre">Ferney</button>
+                <button class="boton btnNombre">Pinzón</button>
+                <button class="boton btnNombre">Julián</button>
             </div>
 
-            <div class="introduccion">
-                <div class="textoIntroduccion">
-                    <h1 class="titulo">
-                        <span class="texto primerTexto">Adivina</span>
-                    </h1>
-                    <h1 class="titulo">
-                        <span class="texto segundoTexto">Quién?</span>
-                    </h1>
+            <div class="contCenter">
+                <div class="marcoFoto">
+                    <img class="foto" src="../src/Julian.jpeg" alt="">
                 </div>
+                <div class="nombreApellido">
+                    <input class="input" placeholder="Nombre" disabled>
+                    <input class="input" placeholder="Apellido" disabled>
+                </div>
+                <button class="boton btnAdivina">Adivina</button>
             </div>
 
-            <div class="slider"></div>
+            <div class="marco marcoder">
+
+            </div>
+        </div>
+
+        <div class="introduccion">
+            <div class="textoIntroduccion">
+                <h1 class="titulo">
+                    <span class="texto primerTexto">Adivina</span>
+                </h1>
+                <h1 class="titulo">
+                    <span class="texto segundoTexto">Quién?</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="slider"></div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
@@ -56,4 +60,5 @@
         crossorigin="anonymous"></script>
     <script src="../js/game.js"></script>
 </body>
+
 </html>
