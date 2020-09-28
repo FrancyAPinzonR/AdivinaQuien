@@ -7,14 +7,14 @@ let pass2 = CryptoJS.SHA3('aa');
 let session_activa = []
 
 
-ingresar.addEventListener('click', (e)=> {
+ingresar.addEventListener('click', (e) => {
     e.preventDefault();
     //console.log(user.value);
     validar(user);
     validar(password);
     let passCode = CryptoJS.SHA3(password.value);
 
-    
+
 
 
     const userTemp = {
@@ -46,35 +46,35 @@ const validarSesion = (usr) => {
     let usuario = -1;
 
 
-    if(consultarRegistro(usr)){
+    if (consultarRegistro(usr)) {
         for (let i = 0; i < reg.length; i++) {
-            if (reg[i].nombre == usr.nombre ) {
+            if (reg[i].nombre == usr.nombre) {
                 usuario = i;
             }
         }
-     
-        if(usuario > -1) {
-            if(JSON.stringify(reg[usuario].password) === JSON.stringify(usr.password)){
+
+        if (usuario > -1) {
+            if (JSON.stringify(reg[usuario].password) === JSON.stringify(usr.password)) {
                 console.log('ingreso sesion');
                 session_activa.push({
                     nombre: usr.nombre,
                     password: usr.password,
                 })
                 localStorage.setItem('session-game', JSON.stringify(session_activa));
-                location.href ="../pages/game.html";
+                location.href = "../pages/aboutus.html";
                 swal("OK", "Vamos a Jugar!!", "success");
-            }else {
+            } else {
                 swal("Error", "Error de Credenciales", "error");
             }
         }
-    }else {
-        
+    } else {
+
         swal("Error", "Error de Credenciales", "error");
     }
-    
 
-    
-    
+
+
+
 
 }
 
