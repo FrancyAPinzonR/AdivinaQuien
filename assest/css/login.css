@@ -1,0 +1,196 @@
+body {
+    background-color: #262335;
+    font-family: 'Architects Daughter',
+        cursive;
+}
+
+h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+h4 {
+    color: #696969;
+}
+
+
+
+
+
+.nav-pills-custom .nav-link {
+    background: #fff;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #45b649;
+    background: #fff;
+}
+
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+.social {
+    line-height: 30px;
+}
+
+
+
+.adivina {
+    width: 150px;
+
+}
+
+
+.menupdre {
+    background-color: #191623;
+    color: #F25936;
+}
+
+.campos-texto {
+
+    color: #e9e9e9;
+    background-color: #343434;
+    background-clip: padding-box;
+    border: 1px solid #00DF59;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+
+}
+
+
+
+.campos-texto:focus:invalid {
+    background: #343434;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+
+.campos-texto:hover {
+    cursor: pointer;
+}
+
+
+.campos-texto:focus:valid {
+    background: #fff;
+    box-shadow: 0 0 5px #126a77;
+    border-color: #17A2B8;
+    font-size: 18px;
+}
+
+
+/*
+.buttom {
+
+    font-size: 18px;
+    color: #076335;
+    margin: 0 3px 0 0;
+}
+
+
+.boton2 {
+    align-items: center;
+    margin-top: 10px;
+
+}*/
+
+.bton2 {
+    background-color: #00DF59;
+    border-radius: 10px;
+    color: rgb(255, 236, 253);
+
+    font-family: 'Ranchers',
+        cursive;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    border: 0;
+    width: 100%;
+    max-width: 110px;
+}
+
+
+.bton2:hover {
+    background-color: #F030A3;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Ranchers',
+        cursive;
+
+    padding: 5px;
+    margin: 5px;
+    border: 0;
+    width: 100%;
+    max-width: 100px;
+}
+
+
+
+/*estilo a la letra del Placeholder*/
+:-moz-placeholder {
+    color: rgb(30, 151, 115);
+}
+
+::-webkit-input-placeholder {
+    color: rgb(30, 151, 115);
+}
+
+/* form {
+    display: block;
+    margin-top: 100px;
+} */
+
+.registro {
+    margin-bottom: 30px;
+
+
+}
+
+.img-registro {
+    float: left;
+    position: relative;
+
+
+}
+
+.general2 {
+
+
+    border-radius: 10px;
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contenedor {
+    background-color: #1A1B2C;
+    box-shadow: 0px 4px 5px 10px #00DF59;
+
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 15rem 2rem;
+
+}
+
+.nombre .nombre-color {
+    background-color: cornsilk;
+    border-radius: 15px;
+}
+
+.espacio {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}

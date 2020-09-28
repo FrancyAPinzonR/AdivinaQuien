@@ -12,7 +12,7 @@
 
 <body>
     <main>
-        <a href="./login.html"><button class="botonSalir">SALIR X</button></a>
+        <a id="salir"><button class="botonSalir">SALIR X</button></a>
 
         <div class="lists gameCont">
             <div class="list marco marcoizq">
@@ -22,7 +22,7 @@
                 <div class="list-item boton btnNombre" draggable="true">Alejandra</div>
                 <div class="list-item boton btnNombre" draggable="true">Cuellar</div>
                 <div class="list-item boton btnNombre" draggable="true">Ferney</div>
-                <div class="list-item boton btnNombre" draggable="true">Pinzón</div>
+                <div class="list-item boton btnNombre" draggable="true">Pinzon</div>
                 <div class="list-item boton btnNombre" draggable="true">Julian</div>
             </div>
 
@@ -61,21 +61,14 @@
                         </thead>
                         <tbody class="tablaBody">
                             <tr>
-                                <td>5</td>
-                                <td>1</td>
-                                <td>3:54</td>
+                                <td id="acierto">0</td>
+                                <td id="desacierto">0</td>
+                                <td>3:00</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="marcoPistas">
-                    <img class="iconoPista" src="../src/2.png" alt="">
-                    <img class="iconoPista" src="../src/3.png" alt="">
-                    <img class="iconoPista" src="../src/4.png" alt="">
-                    <img class="iconoPista" src="../src/5.png" alt="">
-                    <img class="iconoPista" src="../src/6.png" alt="">
-                    <img class="iconoPista" src="../src/7.png" alt="">
-                </div>
+                <div class="marcoPistas"></div>
             </div>
         </div>
 
@@ -92,13 +85,14 @@
 
         <div class="slider"></div>
         <audio id="audio" controls>
-            <source type="audio/mp3" src="../audio/audio.mp3">
+            <source type="audio/mp3" src="../src/audio.mp3">
         </audio>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/game.js"></script>
     <script src="../js/main.js"></script>
 </body>
