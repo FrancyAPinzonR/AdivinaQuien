@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
 :root {
     --colorTexto: rgb(22, 107, 204);
     --backgroundColor: #262335;
@@ -5,8 +7,9 @@
     --neonBlue: #00EBFF;
     --neonGreen: #00DF59;
     --fontSize: 1.5vw;
-    --font: 'Fascinate Inline',
-        cursive;
+    --font: 'Ranchers',
+    cursive;
+
 }
 
 body {
@@ -40,7 +43,7 @@ body {
 .botonSalir {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 25px;
 }
 
 /*Estilos*/
@@ -125,7 +128,7 @@ body {
 .tablaBody td {
     text-align: center;
     color: white;
-    font-family: sans-serif;
+    font-family: var(--font)
 }
 
 .marcoPistas {
@@ -150,14 +153,17 @@ body {
     cursor: pointer;
     outline: none;
     font-family: var(--font);
+
 }
 
 .btnNombre {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: 5%;
+    /* width: 60%;
+    height: 5%; */
+    width: 127px;
+    height: 36px;
     color: var(--neonViolet);
     background-color: var(--backgroundColor);
     border: 1px solid var(--neonViolet);
@@ -198,7 +204,8 @@ body {
     border-radius: 50%;
     cursor: pointer;
     color: var(--neonViolet);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Ranchers',
+    cursive;
     outline: none;
 
     box-shadow: 0 0 10px var(--neonViolet);
@@ -254,6 +261,7 @@ body {
         cursive;
     /* color: rgb(241, 210, 28); */
     color: var(--neonBlue);
+    /* font-family: var(--font); */
 }
 
 .titulo {
@@ -380,8 +388,15 @@ body {
     }
 
     .input {
-        width: 120px;
+        /* width: 120px;
         height: 50px;
+
+        margin: .5em 0;
+        margin: .5em auto;
+        font-size: 16px; */
+
+        width: 120px;
+        height: 200px;
 
         margin: .5em 0;
         margin: .5em auto;
