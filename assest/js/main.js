@@ -1,6 +1,6 @@
 
 if(!localStorage.getItem('session-game')){
-	location.href ="../pages/login.html";
+	location.href ="http://www.pagina1.com";
 }
 //document.oncontextmenu = function(){return false}
 let avatar = document.getElementById('avatar');

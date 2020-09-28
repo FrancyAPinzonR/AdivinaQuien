@@ -48,8 +48,8 @@ body {
 
 /*Estilos*/
 .marcoFoto {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     color: var(--neonBlue);
     background-color: var(--backgroundColor);
@@ -103,16 +103,6 @@ body {
         0 0px 15px 0 var(--neonGreen),
         0 0px 15px 0 var(--neonGreen),
         0 0px 15px 0 var(--neonGreen);
-}
-
-.marcoPistas {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.iconoPista{
-    width: 45%;
-    /* height: 40%; */
 }
 
 /*Tabla de Datos*/
@@ -308,13 +298,13 @@ body {
 /*Responsive Tablet*/
 @media only screen and (max-width: 768px) {
     .marco {
-        width: 20vw;
+        width: 40vw;
         height: 65vh;
     }
 
     .marcoFoto {
-        width: 250px;
-        height: 250px;
+        width: 80%;
+        height: 80%;
     }
 
     .foto {
@@ -322,30 +312,6 @@ body {
         height: 200px;
         margin: 1.8em auto;
     }
-
-    .nombreApellido {
-        flex-direction: column;
-    }
-
-    .input {
-        width: 100px;
-        height: 100px;
-    }
-
-    /* .input {
-        width: 50%;
-        height: 20%;
-        padding: 0 3.5em 0 .3em;
-        margin: 1em .3em;
-        border-radius: 1em;
-        color: var(--neonViolet);
-        background-color: var(--backgroundColor);
-        border: 1px solid var(--neonViolet);
-        box-shadow: 0 0 10px var(--neonViolet);
-        font-size: var(--fontSize);
-        font-size: 21px;
-        font-family: var(--font);
-    } */
 
     .btnNombre {
         font-size: 16px;
@@ -401,7 +367,6 @@ body {
 
     .marcoPistas {
         border-radius: 1em;
-        height: 70vh;
     }
 
     .marcoFoto {
@@ -431,7 +396,7 @@ body {
         font-size: 16px; */
 
         width: 120px;
-        height: 150px;
+        height: 200px;
 
         margin: .5em 0;
         margin: .5em auto;
