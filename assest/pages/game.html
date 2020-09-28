@@ -15,14 +15,14 @@
 
         <div class="gameCont">
             <div class="marco marcoizq">
-                <button class="boton btnNombre">Leidy</button>
-                <button class="boton btnNombre">Rodríguez</button>
-                <button class="boton btnNombre">Valero</button>
-                <button class="boton btnNombre">Alejandra</button>
-                <button class="boton btnNombre">Cuellar</button>
-                <button class="boton btnNombre">Ferney</button>
-                <button class="boton btnNombre">Pinzón</button>
-                <button class="boton btnNombre">Julián</button>
+                <div class="boton btnNombre leidy"> <p>Leidy</p> </div>
+                <div class="boton btnNombre leidy"> <p>Rodríguez</p> </div>
+                <div class="boton btnNombre"> <p>Valero</p> </div>
+                <div class="boton btnNombre"> <p>Alejandra</p> </div>
+                <div class="boton btnNombre"> <p>Cuellar</p> </div>
+                <div class="boton btnNombre"> <p>Ferney</p> </div>
+                <div class="boton btnNombre"> <p>Pinzón</p> </div>
+                <div class="boton btnNombre"> <p>Julián</p> </div>
             </div>
 
             <div class="contCenter">
@@ -30,14 +30,23 @@
                     <img class="foto" src="../src/Julian.jpeg" alt="">
                 </div>
                 <div class="nombreApellido">
-                    <input class="input" placeholder="Nombre" disabled>
-                    <input class="input" placeholder="Apellido" disabled>
+                    <!-- <input class="input" placeholder="Nombre" disabled>
+                    <input class="input" placeholder="Apellido" disabled> -->
+                    <div class="input">
+                        <p>Nombre</p>
+                        <div id="nombre"></div>
+                    </div>
+                    <div class="input">
+                        <p>Apellido</p>
+                        <div id="apellido"></div>
+                    </div>
                 </div>
                 <button class="boton btnAdivina">Adivina</button>
             </div>
 
             <div class="marco marcoder">
-
+                <div class="marcoDatos"></div>
+                <div class="marcoPistas"></div>
             </div>
         </div>
 
