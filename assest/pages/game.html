@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/game.css">
 </head>
+
 <body>
-    
+    <main>
+        <a href="./login.html"><button class="botonSalir">Salir X</button></a>
+
+        <div class="gameCont">
+            <div class="marco marcoizq">
+                <div class="boton btnNombre leidy"> <p>Leidy</p> </div>
+                <div class="boton btnNombre leidy"> <p>Rodríguez</p> </div>
+                <div class="boton btnNombre"> <p>Valero</p> </div>
+                <div class="boton btnNombre"> <p>Alejandra</p> </div>
+                <div class="boton btnNombre"> <p>Cuellar</p> </div>
+                <div class="boton btnNombre"> <p>Ferney</p> </div>
+                <div class="boton btnNombre"> <p>Pinzón</p> </div>
+                <div class="boton btnNombre"> <p>Julián</p> </div>
+            </div>
+
+            <div class="contCenter">
+                <div class="marcoFoto">
+                    <img class="foto" src="../src/Julian.jpeg" alt="">
+                </div>
+                <div class="nombreApellido">
+                    <div class="input">
+                        <p>Nombre</p>
+                        <div id="nombre"></div>
+                    </div>
+                    <div class="input">
+                        <p>Apellido</p>
+                        <div id="apellido"></div>
+                    </div>
+                </div>
+                <button class="boton btnAdivina">Adivina</button>
+            </div>
+
+            <div class="marco marcoder">
+                <div class="marcoDatos">
+                    <table class="tablaDatos">
+                        <thead class="tablaHead">
+                            <tr>
+                                <th>
+                                    <img class="icono" src="../src/marca-de-verificacion.png" alt="">
+                                </th>
+                                <th>
+                                    <img class="icono" src="../src/borrar.png" alt="">
+                                </th>
+                                <th>
+                                    <img class="icono" src="../src/cronografo.png" alt="">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tablaBody">
+                            <tr>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>3:54</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="marcoPistas"></div>
+            </div>
+        </div>
+
+        <div class="introduccion">
+            <div class="textoIntroduccion">
+                <h1 class="titulo">
+                    <span class="texto primerTexto">Adivina</span>
+                </h1>
+                <h1 class="titulo">
+                    <span class="texto segundoTexto">Quién?</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="slider"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="../js/game.js"></script>
 </body>
+
 </html>
