@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
-    
+    <main>
+        <a id="salir"><button class="botonSalir" >SALIR X</button></a>
+
+        <div class="lists gameCont">
+            <div class="list marco marcoizq">
+                <div class="list-item boton btnNombre" draggable="true">Leidy</div>
+                <div class="list-item boton btnNombre" draggable="true">Rodriguez</div>
+                <div class="list-item boton btnNombre" draggable="true">Valero</div>
+                <div class="list-item boton btnNombre" draggable="true">Alejandra</div>
+                <div class="list-item boton btnNombre" draggable="true">Cuellar</div>
+                <div class="list-item boton btnNombre" draggable="true">Ferney</div>
+                <div class="list-item boton btnNombre" draggable="true">Pinzon</div>
+                <div class="list-item boton btnNombre" draggable="true">Julian</div>
+            </div>
+
+            <div class="contCenter">
+                <div class="marcoFoto">
+                    <img class="foto" id="avatar" src="" alt="">
+                </div>
+                <div class="nombreApellido">
+                    <div class="input">
+                        <p>Nombre</p>
+                        <div class="list listinput" id="nombre"></div>
+                    </div>
+                    <div class="input">
+                        <p>Apellido</p>
+                        <div class="list listinput" id="apellido"></div>
+                    </div>
+                </div>
+                <button class="boton btnAdivina" id="adivinar">Adivina</button>
+            </div>
+
+            <div class="marco marcoder">
+                <div class="marcoDatos">
+                    <table class="tablaDatos">
+                        <thead class="tablaHead">
+                            <tr>
+                                <th>
+                                    <img class="icono" src="../src/marca-de-verificacion.png" alt="">
+                                </th>
+                                <th>
+                                    <img class="icono" src="../src/borrar.png" alt="">
+                                </th>
+                                <th>
+                                    <img class="icono" src="../src/cronografo.png" alt="">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tablaBody">
+                            <tr>
+                                <td id="acierto">0</td>
+                                <td id="desacierto">0</td>
+                                <td>3:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="marcoPistas"></div>
+            </div>
+        </div>
+
+        <div class="introduccion">
+            <div class="textoIntroduccion">
+                <h1 class="titulo">
+                    <span class="texto primerTexto">Adivina</span>
+                </h1>
+                <h1 class="titulo">
+                    <span class="texto segundoTexto">Quién?</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="slider"></div>
+        <audio id="audio" controls>
+            <source type="audio/mp3" src="../src/audio.mp3">
+        </audio>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/game.js"></script>
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
