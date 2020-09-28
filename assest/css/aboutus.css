@@ -5,8 +5,22 @@
 }
 
 body {
-    font-family: 'Fascinate Inline',
+    /* font-family: 'Fascinate Inline',
+        cursive; */
+    font-family: 'Ranchers',
         cursive;
+}
+
+.text {
+    font-size: 20px;
+}
+
+p,
+.text {
+    font-family: 'Architects Daughter',
+        cursive;
+    font-size: 18px;
+
 }
 
 .nav-pills-custom .nav-link {
